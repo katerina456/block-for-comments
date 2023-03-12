@@ -1,0 +1,176 @@
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2f6fa;
+    margin: 0;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+
+    color: #111111;
+    font-style: normal;
+    font-size: 16px;
+}
+
+h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form {
+    padding: 20px;
+    background-color: #ffffff;
+    border: 0;
+    border-radius: 20px;
+    width: fit-content;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.visible {
+    display: flex;
+}
+
+.form-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#close {
+    width: 35px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.button {
+    font-family: 'Open Sans', sans-serif;
+    color: #111111;
+    font-style: normal;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 15px;
+    background-color: #75b7b7;
+    border: 0;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.button:disabled {
+    background-color: #a2b6b6;
+}
+
+.label {
+    font-weight: 600;
+}
+
+.input {
+    font-family: 'Open Sans', sans-serif;
+    color: #111111;
+    font-style: normal;
+    font-size: 15px;
+    padding: 15px;
+    outline: none;
+    border: 1px solid #75b7b7;
+    border-radius: 10px;
+
+}
+
+.input::placeholder {
+    font-family: 'Open Sans', sans-serif;
+    color: #7e7979;
+    font-style: normal;
+    font-size: 15px;
+}
+
+.button:hover {
+    background-color: #406666;
+    color: #f3f3f3;
+}
+
+.comments {
+    padding: 20px 0;
+}
+
+.comment {
+    background-color: #ffffff;
+    border: 0;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-user {
+    margin-right: 20px;
+    font-weight: 600;
+}
+
+.user-buttons {
+    display: flex;
+}
+
+.user-buttons img {
+    width: 20px;
+    cursor: pointer;
+}
+
+.like {
+    width: 20px;
+    height: 20px;
+    background-image: url(icons/like.svg);
+    background-size: cover;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(12.5px);
+    min-height: 100vh;
+}
+
+.mistake {
+    color: red;
+    font-size: 12px;
+    opacity: 0;
+}

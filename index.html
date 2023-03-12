@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <title>Comments</title>
+</head>
+<body>
+    
+    <header class="container header">
+        <h1>Комментарии</h1> 
+        <button class="button" id="set">Оставить комментарий</button>
+    </header>
+    
+
+    <form action="#" class="form">
+        <div class="form-title">
+            <h2>Оставить комментарий</h2>
+            <img src="icons/close.svg" alt="" id="close">
+        </div>
+        
+        <div class="form-item">
+            <label for="userName" class="label">Имя</label>
+            <input type="text" name="userName" id="userName" minlength="3" maxlength="20"
+            class="input" placeholder="Ваше имя" required>
+            <p class="mistake">Имя не может быть меньше 3 и длиннее 20 символов</p>
+        </div>
+        
+        <div class="form-item">
+            <label for="text" class="label">Текст комментария</label>
+            <input type="text" name="text" id="text" 
+            class="input" placeholder="Комментарий" required>
+            <p class="mistake">Комментарий не может быть меньше 5 и длиннее 100 символов</p>
+        </div>
+        
+        <div class="form-item">
+            <label for="date" class="label">Выберите дату (по желанию)</label>
+            <input type="date" name="date" id="date" class="input">
+            <p class="mistake">
+                Просим прощения, но вы не можете выбрать дату из будущего
+                <br>
+                Через 2 секунды мы обнулим выбранную вами дату
+            </p>
+        </div>
+        
+
+        <button type="submit" class="button">Отправить</button>
+    </form>
+
+    
+
+    <section class="comments container">
+
+        <!-- <div class="comment">
+            <div class="comment-header">
+                <div class="about">
+                    <p class="about-user">Admin</p>
+                    <p class="about-date"><span class="day">12.12.2012</span>, <span class="time">08:00</span></p>
+                </div>
+                <div class="user-buttons">
+                    <div class="like" data-like="no"></div>
+
+                    <img src="icons/delete.svg" alt="" class="delete">
+                </div>
+            </div>
+            
+            <div class="comment-main">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Ipsam voluptatem aut vero velit iste neque est culpa a placeat, 
+                    omnis numquam nemo quidem aspernatur beatae facilis nulla ullam eaque repellat.
+                </p>
+            </div>
+            
+        </div> -->
+        
+    </section>
+
+    
+
+    <script src="index.js"></script>
+</body>
+</html>
